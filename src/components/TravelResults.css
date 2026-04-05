@@ -1,0 +1,114 @@
+.results h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 28px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.result-section {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border: 2px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.result-section:hover {
+  border-color: #cbd5e0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.result-section.error {
+  background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+  border-color: #fca5a5;
+}
+
+.result-section.error p {
+  color: #dc2626;
+}
+
+.result-section h3 {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #2d3748;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.result-section h3::before {
+  content: '';
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 2px;
+}
+
+.result-section p {
+  font-size: 0.95rem;
+  color: #4a5568;
+  line-height: 1.8;
+}
+
+.result-section ul {
+  padding-left: 24px;
+  color: #4a5568;
+  font-size: 0.95rem;
+  line-height: 1.9;
+}
+
+.result-section ul li {
+  margin-bottom: 8px;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.tag {
+  background: linear-gradient(135deg, #ede9fe 0%, #f3e8ff 100%);
+  color: #6d28d9;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #ddd6fe;
+}
+
+.itinerary-section {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border-color: #7dd3fc;
+}
+
+.itinerary-content {
+  font-size: 0.9rem;
+  color: #0369a1;
+  line-height: 1.9;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.itinerary-content p {
+  margin-bottom: 10px;
+  color: #0369a1;
+}
+
+@media (max-width: 600px) {
+  .result-section {
+    padding: 18px;
+  }
+  
+  .results h2 {
+    font-size: 1.3rem;
+  }
+}
