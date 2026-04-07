@@ -367,7 +367,7 @@ Consider offering:
 | Item | Details |
 |------|---------|
 | **Product** | TravelHelperAI |
-| **Price** | $39 |
+| **Price** | $15 |
 | **License** | MIT (commercial use) |
 | **Tech** | React 19 + TypeScript |
 | **AI** | Groq API |

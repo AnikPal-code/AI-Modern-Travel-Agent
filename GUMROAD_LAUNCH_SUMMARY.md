@@ -116,7 +116,7 @@ TravelHelperAI - AI Travel Itinerary Generator (React + TypeScript)
 
 ### Price
 ```
-$39
+$15
 ```
 
 ### Description

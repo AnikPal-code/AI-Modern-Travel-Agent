@@ -4,44 +4,60 @@ Complete guide to selling TravelHelperAI on Gumroad with pricing strategy and ma
 
 ## 📊 Pricing Strategy
 
-### Recommended Price: **$39**
+### Launch Price: **$15**
 
-**Why $39?**
-- Not too cheap (doesn't devalue the product)
-- Not too expensive (accessible to most developers)
-- Sweet spot for digital products
-- Psychological pricing (ends in 9)
-- Covers development time investment
+**Why $15?**
+- Perfect for testing the market
+- Low barrier to entry
+- Attracts early adopters
+- Builds initial reviews/testimonials
+- Can increase price later based on demand
+- Great for first-time sellers
+
+### Pricing Evolution Strategy
+
+| Phase | Price | Goal |
+|-------|-------|------|
+| **Phase 1 (Now)** | **$15** | Test market, build reviews |
+| **Phase 2 (Month 2-3)** | $25 | Increase based on feedback |
+| **Phase 3 (Month 4+)** | $39+ | Premium positioning |
+
+**Why this works:**
+- Low price = more sales = more reviews
+- Reviews = social proof = can raise price
+- Early adopters = loyal customers
+- Data-driven pricing = better decisions
 
 ### Alternative Pricing Options
 
 | Price | Target Market | Positioning |
 |-------|---------------|-------------|
+| **$15** | Early adopters | "Launch special" ⭐ |
 | **$19** | Budget-conscious | "Starter template" |
-| **$29** | Value seekers | "Good value" |
-| **$39** | Standard | "Professional product" ⭐ |
+| **$25** | Value seekers | "Good value" |
+| **$39** | Standard | "Professional product" |
 | **$49** | Premium | "Complete solution" |
 | **$99** | Enterprise | "White-label + support" |
 
-**Recommendation**: Start at **$39**, adjust based on sales.
+**Recommendation**: Start at **$15**, increase to $25-39 after 20+ sales.
 
 ---
 
-## 📝 Gumroad Product Title
+## 💰 Gumroad Product Title
 
-### Option 1 (Recommended)
+### Option 1 (Recommended for $15)
 ```
-TravelHelperAI - AI Travel Itinerary Generator (React + TypeScript)
+TravelHelperAI - AI Travel Itinerary Generator (React + TypeScript) - Launch Special $15
 ```
 
 ### Option 2
 ```
-AI Travel Planner Template - Ready to Deploy
+AI Travel Planner Template - Ready to Deploy - Limited Time $15
 ```
 
 ### Option 3
 ```
-Travel Itinerary Generator with Groq AI - Full Source Code
+Travel Itinerary Generator with Groq AI - Full Source Code - Early Bird $15
 ```
 
 ---
@@ -306,20 +322,22 @@ travel-planner, itinerary, booking, tourism, developer-tools
 
 ## 📊 Expected Sales Potential
 
-### Conservative Estimate
-- **Monthly sales**: 5-10 units
-- **Monthly revenue**: $195-390
-- **Annual revenue**: $2,340-4,680
+### With $15 Price Point
 
-### Moderate Estimate
-- **Monthly sales**: 15-25 units
-- **Monthly revenue**: $585-975
-- **Annual revenue**: $7,020-11,700
+**Conservative Estimate (Testing Phase)**
+- **Monthly sales**: 10-20 units
+- **Monthly revenue**: $150-300
+- **Annual revenue**: $1,800-3,600
 
-### Optimistic Estimate
-- **Monthly sales**: 30-50 units
-- **Monthly revenue**: $1,170-1,950
-- **Annual revenue**: $14,040-23,400
+**Moderate Estimate (After 1-2 months)**
+- **Monthly sales**: 25-40 units
+- **Monthly revenue**: $375-600
+- **Annual revenue**: $4,500-7,200
+
+**Optimistic Estimate (After 3+ months)**
+- **Monthly sales**: 50-100 units
+- **Monthly revenue**: $750-1,500
+- **Annual revenue**: $9,000-18,000
 
 **Factors that increase sales:**
 - Good marketing on social media
@@ -327,6 +345,12 @@ travel-planner, itinerary, booking, tourism, developer-tools
 - Regular updates
 - Active community engagement
 - Featured on Gumroad trending
+- Low price attracts more buyers
+
+**Price Increase Strategy:**
+- After 20 sales: Increase to $25
+- After 50 sales: Increase to $39
+- After 100 sales: Consider $49-99
 
 ---
 
