@@ -19,13 +19,12 @@ const getEmailBackendUrl = (): string => {
     return import.meta.env.VITE_EMAIL_BACKEND_URL;
   }
   
-  // For local development, use localhost
+  // For local development, use localhost backend
   if (import.meta.env.DEV) {
     return 'http://localhost:3001';
   }
   
-  // For production, try to use the same domain with /api prefix
-  // This assumes email backend is deployed to same Vercel project
+  // For production on Vercel, use the serverless function
   return `${window.location.origin}/api`;
 };
 
