@@ -33,11 +33,6 @@ Complete guide to selling TravelHelperAI on Gumroad with pricing strategy and ma
 | Price | Target Market | Positioning |
 |-------|---------------|-------------|
 | **$15** | Early adopters | "Launch special" ⭐ |
-| **$19** | Budget-conscious | "Starter template" |
-| **$25** | Value seekers | "Good value" |
-| **$39** | Standard | "Professional product" |
-| **$49** | Premium | "Complete solution" |
-| **$99** | Enterprise | "White-label + support" |
 
 **Recommendation**: Start at **$15**, increase to $25-39 after 20+ sales.
 
