@@ -18,10 +18,11 @@ interface FormData {
 
 interface TravelFormProps {
   onSubmit: (data: FormData) => void;
+  initialData?: FormData;
 }
 
-export default function TravelForm({ onSubmit }: TravelFormProps) {
-  const [formData, setFormData] = useState<FormData>({
+export default function TravelForm({ onSubmit, initialData }: TravelFormProps) {
+  const [formData, setFormData] = useState<FormData>(initialData || {
     destination: '',
     departureCity: '',
     departureDate: '',

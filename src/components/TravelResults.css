@@ -112,3 +112,132 @@
     font-size: 1.3rem;
   }
 }
+/* Email Sharing Styles */
+.email-section {
+  border-top: 2px solid #e5e7eb;
+  margin-top: 24px;
+  padding-top: 24px;
+}
+
+.email-actions {
+  text-align: center;
+}
+
+.btn-email {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 8px;
+}
+
+.btn-email:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+.btn-email:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.email-hint {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.email-form {
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.email-inputs {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.email-inputs input {
+  padding: 12px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.email-inputs input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.email-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.btn-send {
+  background: #10b981;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-send:hover:not(:disabled) {
+  background: #059669;
+}
+
+.btn-send:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-cancel {
+  background: #6b7280;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cancel:hover {
+  background: #4b5563;
+}
+
+.email-success {
+  background: #d1fae5;
+  color: #065f46;
+  padding: 12px 16px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 16px;
+  border: 1px solid #a7f3d0;
+}
+
+@media (max-width: 600px) {
+  .email-buttons {
+    flex-direction: column;
+  }
+  
+  .btn-email {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}

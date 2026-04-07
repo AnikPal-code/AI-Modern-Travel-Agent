@@ -1,0 +1,259 @@
+/* Voice Assistant Styles - Natural Conversation Design */
+.voice-assistant {
+  margin-bottom: 24px;
+}
+
+.voice-start-section {
+  text-align: center;
+  padding: 24px;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0e7ff 100%);
+  border-radius: 16px;
+  border: 2px solid #3b82f6;
+}
+
+.voice-start-btn {
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.voice-start-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+}
+
+.voice-description {
+  margin-top: 12px;
+  color: #1e40af;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.voice-conversation {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-radius: 20px;
+  padding: 24px;
+  border: 2px solid #e2e8f0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.conversation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.conversation-header h3 {
+  color: #1e293b;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.end-conversation {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.end-conversation:hover {
+  background: #dc2626;
+}
+
+.conversation-status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 24px 0;
+}
+
+.status-indicator {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.pulse-ring {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.status-indicator.listening .pulse-ring {
+  background: rgba(34, 197, 94, 0.2);
+  border: 3px solid #22c55e;
+}
+
+.status-indicator.speaking .pulse-ring {
+  background: rgba(59, 130, 246, 0.2);
+  border: 3px solid #3b82f6;
+}
+
+.status-indicator.thinking .pulse-ring {
+  background: rgba(156, 163, 175, 0.2);
+  border: 3px solid #9ca3af;
+}
+
+.status-icon {
+  font-size: 2rem;
+  z-index: 1;
+}
+
+.status-text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.conversation-bubble {
+  background: white;
+  padding: 12px 16px;
+  border-radius: 16px;
+  margin: 16px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #3b82f6;
+}
+
+.user-bubble {
+  background: #eff6ff;
+  border-left-color: #22c55e;
+}
+
+.bubble-content {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.conversation-progress {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.progress-text {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #22c55e 0%, #3b82f6 100%);
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.voice-assistant-error {
+  background: #fef2f2;
+  color: #dc2626;
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #fecaca;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .voice-conversation {
+    padding: 16px;
+  }
+  
+  .conversation-header {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+  
+  .status-indicator {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .status-icon {
+    font-size: 1.5rem;
+  }
+  
+  .voice-start-btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+}
+/* Manual listen button */
+.manual-listen-btn {
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(34, 197, 94, 0.3);
+}
+
+.manual-listen-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(34, 197, 94, 0.4);
+}
+
+.manual-listen-btn:active {
+  transform: translateY(0);
+}
+/* Debug info */
+.debug-info {
+  background: #f3f4f6;
+  color: #6b7280;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin: 8px 0;
+  font-family: monospace;
+  font-size: 0.8rem;
+  border: 1px solid #d1d5db;
+}
