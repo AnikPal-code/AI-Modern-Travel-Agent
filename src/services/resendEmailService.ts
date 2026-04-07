@@ -1,13 +1,3 @@
-import { Resend } from 'resend';
-
-const resendApiKey = import.meta.env.VITE_RESEND_API_KEY;
-
-if (!resendApiKey) {
-  console.warn('Resend API key is not configured. Please add VITE_RESEND_API_KEY to .env.local');
-}
-
-const resend = new Resend(resendApiKey);
-
 interface EmailRequest {
   to_email: string;
   to_name: string;
