@@ -12,7 +12,24 @@ interface EmailResponse {
   messageId?: string;
 }
 
-const EMAIL_BACKEND_URL = import.meta.env.VITE_EMAIL_BACKEND_URL || 'http://localhost:3001';
+// Determine email backend URL based on environment
+const getEmailBackendUrl = (): string => {
+  // If explicitly set in env, use it
+  if (import.meta.env.VITE_EMAIL_BACKEND_URL) {
+    return import.meta.env.VITE_EMAIL_BACKEND_URL;
+  }
+  
+  // For local development, use localhost
+  if (import.meta.env.DEV) {
+    return 'http://localhost:3001';
+  }
+  
+  // For production, try to use the same domain with /api prefix
+  // This assumes email backend is deployed to same Vercel project
+  return `${window.location.origin}/api`;
+};
+
+const EMAIL_BACKEND_URL = getEmailBackendUrl();
 
 export const sendItineraryEmail = async (emailData: EmailRequest): Promise<EmailResponse> => {
   try {
