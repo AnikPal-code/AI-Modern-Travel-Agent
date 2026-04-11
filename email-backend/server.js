@@ -45,6 +45,16 @@ app.post('/send-email', async (req, res) => {
 
     if (response.error) {
       console.error('❌ Email sending failed:', response.error);
+      
+      // Check if it's a sandbox mode error
+      if (response.error.message && response.error.message.includes('sandbox')) {
+        return res.status(400).json({
+          success: false,
+          error: 'Resend is in sandbox mode. Please verify the recipient email in your Resend dashboard first.',
+          details: response.error.message,
+        });
+      }
+      
       return res.status(500).json({
         success: false,
         error: response.error.message || 'Failed to send email',
