@@ -20,6 +20,11 @@ app.get('/health', (req, res) => {
   res.json({ status: 'Email backend is running! 🚀' });
 });
 
+// Root endpoint
+app.get('/', (req, res) => {
+  res.json({ status: 'Email backend is running! 🚀', message: 'Use POST /send-email to send emails' });
+});
+
 // Send email endpoint
 app.post('/send-email', async (req, res) => {
   try {
